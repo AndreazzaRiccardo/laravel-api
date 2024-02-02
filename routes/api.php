@@ -22,3 +22,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/projects', [ProjectController::class, 'index']);
 Route::get('/user', [ProjectController::class, 'showUser']);
 Route::get('/projects/{slug}', [ProjectController::class, 'show']);
+Route::get('/search/{name}', [ProjectController::class, 'searchProject']);
