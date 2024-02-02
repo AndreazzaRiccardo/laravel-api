@@ -117,7 +117,7 @@ class ProjectController extends Controller
         $project->fill($request->validated());
 
         $this->checkUser($project);
-
+      
         $project->save();
 
         if ($request->has('technologies')) {
