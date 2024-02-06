@@ -48,7 +48,7 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="http://localhost:5173/">{{ __('Home') }}</a>
+                            <a class="nav-link" href="http://localhost:4242/">{{ __('Home') }}</a>
                         </li>
                     </ul>
 
