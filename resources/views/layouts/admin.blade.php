@@ -104,6 +104,12 @@
                                     <i class="fa-solid fa-microchip fa-lg fa-fw"></i> Technologies List
                                 </a>
                             </li>
+                            <li>
+                                <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.leads.index' ? 'bg-secondary' : '' }}"
+                                    href="{{ route('admin.leads.index') }}">
+                                    <i class="fa-solid fa-envelope-open-text fa-lg fa-fw"></i> Leads
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </nav>

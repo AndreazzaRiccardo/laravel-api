@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\LeadController;
 use App\Http\Controllers\Admin\ProjectController;
 use App\Http\Controllers\Admin\TechnologyController;
 use App\Http\Controllers\Admin\TypeController;
@@ -39,6 +40,7 @@ Route::middleware(['auth', 'verified'])
         Route::post('/store', [DashboardController::class, 'store'])->name('user_details.store');
         Route::get('/edit', [DashboardController::class, 'edit'])->name('user_details.edit');
         Route::put('/update', [DashboardController::class, 'update'])->name('user_details.update');
+        Route::resource('leads', LeadController::class);
     });
 
 require __DIR__ . '/auth.php';
