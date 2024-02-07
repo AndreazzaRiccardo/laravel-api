@@ -26,7 +26,7 @@
                                 <label for="name" class="form-label fw-bold">Project Name</label>
                                 <input type="text" class="form-control @error('name') is-invalid @enderror"
                                     id="name" placeholder="Insert name" name="name" required
-                                    value="{{ old('name') }}">
+                                    value="{{ old('name') }}" autocomplete="name">
                                 @error('name')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
@@ -54,7 +54,7 @@
                             <div class="d-flex justify-content-between">
 
                                 <div class="mb-3 w-25">
-                                    <label class="fw-bold" for="types fw-bold">Type</label>
+                                    <label class="fw-bold" for="types">Type</label>
                                     <select class="mt-2 form-select @error('type_id') is-invalid @enderror" name="type_id"
                                         id="types">
                                         <option @selected(!old('type_id')) value="">Select Type</option>
