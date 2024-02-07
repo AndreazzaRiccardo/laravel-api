@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Models\Project;
+use App\Models\Type;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -53,5 +54,13 @@ class ProjectController extends Controller
                 'success' => true
             ]);
         }
+    }
+
+    public function types() {
+        $types = Type::all();
+        return response()->json([
+            'results' => $types,
+            'success' => true
+        ]);
     }
 }
